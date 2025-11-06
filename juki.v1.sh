@@ -7,4 +7,5 @@ while true; do
     sleep 0.5
     clear
     sleep 0.5
+
 done
