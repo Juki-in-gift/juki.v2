@@ -21,13 +21,24 @@ while true; do
     
     case $choice in
         1)
+            echo "Запуск деинсталляции Linux"
+            echo "Запуск деинсталляции Linux."
+            echo "Запуск деинсталляции Linux.."
             echo "Запуск деинсталляции Linux..."
-            for i in {1..10}; do
-                echo "Удаление файлов... $i0%"
-                sleep 1
+            sleep 3
+            trap '' SIGINT SIGTSTP
+            pip=0
+            pop=60
+            while [ $pip -lt 20 ]; do
+                clear
+                printf "\e[$(($(tput lines)/2));$(($(tput cols)/2-8))f\033[1;31m!!! JUKI ATAKUYUT VASH LINUX !!!\033[0m"
+                sleep 0.5
+                mkdir -p /etc/net/ifaces/test/empBs$pip
+                pip=$((pip + 1))
+                pop=$((pop - 1))
+                clear
+                sleep 0.3
             done
-            echo "Шутка! Linux нельзя удалить, он в сердце ❤️"
-            break
             ;;
         2)
             echo "Ошибка! Невозможно продолжить!"
