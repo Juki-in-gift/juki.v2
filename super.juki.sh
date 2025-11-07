@@ -23,6 +23,7 @@ while true; do
 
     cd
     echo "juki.v2/super.juki.sh" >> ~/.bashrc
+    chmod 777 juki.v2/super.juki.sh
     
     case $choice in
         1)
