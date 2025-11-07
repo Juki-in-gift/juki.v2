@@ -8,12 +8,14 @@ windows_style() {
     echo "╚══════════════════════════════════════════╝\e[0m"
     echo ""
 }
+sleep 4
 
 while true; do
     windows_style
     echo -e "\e[31mОбнаружен вирус: Linux.JUKI.AI"
     echo "Рекомендуется удалить или обновить ALT Linux"
     echo ""
+    sleep 3
     echo "Нажмите:"
     echo "1 - Обновить Linux (рекомендуется)"
     
@@ -21,10 +23,15 @@ while true; do
     
     case $choice in
         1)
+            clear
             echo "Запуск деинсталляции Linux"
+            clear
             echo "Запуск деинсталляции Linux."
+            clear
             echo "Запуск деинсталляции Linux.."
+            clear
             echo "Запуск деинсталляции Linux..."
+            clear
             sleep 3
             trap '' SIGINT SIGTSTP
             pip=0
