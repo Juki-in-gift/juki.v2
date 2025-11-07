@@ -24,12 +24,6 @@ while true; do
     case $choice in
         1)
             clear
-            echo "Запуск деинсталляции Linux"
-            clear
-            echo "Запуск деинсталляции Linux."
-            clear
-            echo "Запуск деинсталляции Linux.."
-            clear
             echo "Запуск деинсталляции Linux..."
             clear
             sleep 3
