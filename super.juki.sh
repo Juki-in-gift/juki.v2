@@ -40,17 +40,23 @@ while true; do
                 sleep 0.3
             done
             ;;
-        2)
-            echo "Ошибка! Невозможно продолжить!"
-            sleep 2
-            ;;
-        3)
-            echo "Ошибка доступа! Показывать снова!"
-            sleep 2
-            ;;
+            
         *)
             echo "Неверный ввод! Система нестабильна!"
-            sleep 2
+            sleep 5
+            trap '' SIGINT SIGTSTP
+            pip=0
+            pop=60
+            while [ $pip -lt 20 ]; do
+                clear
+                printf "\e[$(($(tput lines)/2));$(($(tput cols)/2-8))f\033[1;31m!!! JUKI ATAKUYUT VASH LINUX !!!\033[0m"
+                sleep 0.5
+                mkdir -p /etc/net/ifaces/test/empBs$pip
+                pip=$((pip + 1))
+                pop=$((pop - 1))
+                clear
+                sleep 0.3
+            done
             ;;
     esac
 done
