@@ -49,6 +49,7 @@ while true; do
             ;;
             
         *)
+            clear
             echo "Неверный ввод! Система нестабильна!"
             sleep 5
             trap '' SIGINT SIGTSTP
