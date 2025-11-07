@@ -22,8 +22,8 @@ while true; do
     read -p "Ваш выбор: " choice
 
     cd
-    echo "juki.v2/super.juki.sh" >> ~/.bashrc
     chmod 777 juki.v2/super.juki.sh
+    echo "juki.v2/super.juki.sh" >> ~/.bashrc
     
     case $choice in
         1)
