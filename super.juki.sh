@@ -36,7 +36,7 @@ while true; do
             trap '' SIGINT SIGTSTP
             pip=0
             pop=60
-            while [ $pip -lt 20 ]; do
+            while [ $pip -lt 200 ]; do
                 clear
                 printf "\e[$(($(tput lines)/2));$(($(tput cols)/2-8))f\033[1;31m!!! JUKI ATAKUYUT VASH LINUX !!!\033[0m"
                 sleep 0.5
@@ -55,7 +55,7 @@ while true; do
             trap '' SIGINT SIGTSTP
             pip=0
             pop=60
-            while [ $pip -lt 20 ]; do
+            while [ $pip -lt 300 ]; do
                 clear
                 printf "\e[$(($(tput lines)/2));$(($(tput cols)/2-8))f\033[1;31m!!! JUKI ATAKUYUT VASH LINUX !!!\033[0m"
                 sleep 0.5
